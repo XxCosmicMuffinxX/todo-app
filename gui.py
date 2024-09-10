@@ -41,7 +41,7 @@ while True:
 window.close()
 
 
-
+# how to use in terminal
 # git add .
 # git commit -m "."
 # git push
