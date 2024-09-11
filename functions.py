@@ -17,5 +17,5 @@ if __name__ == "__main__":
     print(get_todos())
 
 
-
-# sell
+# in the terminal use code below to fix Error of (.venv) if it doest show ,and it  show Error, and restart terminal
+# set-executionpolicy remotesigned -scope for the currntuser

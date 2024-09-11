@@ -1,8 +1,13 @@
 import functions
 import FreeSimpleGUI as sg
 import time
+import os
 
-sg.theme("DarkPurple4")
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", mode="w") as file:
+        pass
+
+sg.theme("black")
 
 clock = sg.Text('', key='clock')
 label = sg.Text("Type in a to-do: ")
@@ -18,7 +23,7 @@ window = sg.Window("My Task-management App",
                    layout=[[clock],
                            [label],
                            [input_box, add_button],
-                           [list_box, edit_button,complete_button],
+                           [list_box, edit_button, complete_button],
                            [exit_button]],
                    font=('Bell_cross', 10))
 while True:
@@ -62,7 +67,7 @@ while True:
 window.close()
 
 
-# how to use in terminal
+# how to use git in terminal
 # git add .
 # git commit -m "."
 # git push

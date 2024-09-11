@@ -21,6 +21,3 @@ while True:
     folder = values["folder"]
 
 window.close()
-
-
-
