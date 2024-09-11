@@ -47,6 +47,8 @@ while True:
                 window["todos"].update(values=todos)
             except IndexError:
                 sg.popup("Please pick a item to Edit")
+            except ValueError:
+                sg.popup("Item is not in the list")
         case "Complete":
             try:
                 todo_to_complete = values['todos'][0]
@@ -57,6 +59,8 @@ while True:
                 window['todo'].update(value='')
             except IndexError:
                 sg.popup("Please pick a item to Complete")
+            except ValueError:
+                sg.popup("Item is not in the list")
         case "Exit":
             break
         case 'todos':
@@ -65,7 +69,6 @@ while True:
             break
 
 window.close()
-
 
 # how to use git in terminal
 # git add .
