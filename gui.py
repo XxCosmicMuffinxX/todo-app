@@ -3,8 +3,8 @@ import FreeSimpleGUI as sg
 import time
 import os
 
-if not os.path.exists("todos.txt"):
-    with open("todos.txt", mode="w") as file:
+if not os.path.exists("../web_app1/WebApp/todos.txt"):
+    with open("../web_app1/WebApp/todos.txt", mode="w") as file:
         pass
 
 sg.theme("black")
@@ -74,3 +74,4 @@ window.close()
 # git add .
 # git commit -m "."
 # git push
+# how to create EXE file: in terminal pyinstaller --onefile --windowed --clean gui.py
